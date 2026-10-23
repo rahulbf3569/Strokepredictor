@@ -1,0 +1,20 @@
+# Python
+__pycache__/
+*.pyc
+.venv/
+.pytest_cache/
+*.egg-info/
+
+# Data / models (keep small demo artifacts? ignore heavy)
+# Uncomment to ignore models:
+# models/*.joblib
+
+# Node / Next.js
+web/node_modules/
+web/.next/
+web/out/
+web/.env*.local
+
+# OS
+.DS_Store
+Thumbs.db

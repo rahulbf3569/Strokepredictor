@@ -1,0 +1,102 @@
+{
+  "best_model": "logistic_regression",
+  "threshold": 0.6,
+  "metrics": {
+    "accuracy": 0.8375,
+    "precision": 0.1597222222222222,
+    "recall": 0.71875,
+    "f1": 0.26136363636363635,
+    "roc_auc": 0.8452555338541666,
+    "avg_precision": 0.20700751496144357,
+    "confusion_matrix": [
+      [
+        647,
+        121
+      ],
+      [
+        9,
+        23
+      ]
+    ],
+    "threshold": 0.6,
+    "best_model": "logistic_regression"
+  },
+  "all_models": {
+    "logistic_regression": {
+      "accuracy": 0.7575,
+      "precision": 0.1179245283018868,
+      "recall": 0.78125,
+      "f1": 0.20491803278688525,
+      "roc_auc": 0.8452555338541666,
+      "avg_precision": 0.20700751496144357,
+      "confusion_matrix": [
+        [
+          581,
+          187
+        ],
+        [
+          7,
+          25
+        ]
+      ],
+      "cv_avg_precision_mean": 0.20381501977617456,
+      "cv_avg_precision_std": 0.036731224658285565
+    },
+    "random_forest": {
+      "accuracy": 0.955,
+      "precision": 0.16666666666666666,
+      "recall": 0.03125,
+      "f1": 0.05263157894736842,
+      "roc_auc": 0.7534790039062499,
+      "avg_precision": 0.1184602358422122,
+      "confusion_matrix": [
+        [
+          763,
+          5
+        ],
+        [
+          31,
+          1
+        ]
+      ],
+      "cv_avg_precision_mean": 0.12673982419339483,
+      "cv_avg_precision_std": 0.02084937667157623
+    },
+    "hist_gradient_boosting": {
+      "accuracy": 0.95625,
+      "precision": 0.2,
+      "recall": 0.03125,
+      "f1": 0.05405405405405406,
+      "roc_auc": 0.742919921875,
+      "avg_precision": 0.11030366438232682,
+      "confusion_matrix": [
+        [
+          764,
+          4
+        ],
+        [
+          31,
+          1
+        ]
+      ],
+      "cv_avg_precision_mean": 0.13411660389222396,
+      "cv_avg_precision_std": 0.036690596238193846
+    }
+  },
+  "features": {
+    "numeric": [
+      "age",
+      "avg_glucose_level",
+      "bmi",
+      "hypertension",
+      "heart_disease"
+    ],
+    "categorical": [
+      "gender",
+      "ever_married",
+      "work_type",
+      "Residence_type",
+      "smoking_status"
+    ]
+  }
+}

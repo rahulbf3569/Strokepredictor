@@ -1,0 +1,19 @@
+name: CD
+
+on:
+  release:
+    types: [published]
+
+jobs:
+  docker:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Build Docker image
+        run: docker build -t stroke-risk-mlops:latest .
+      - name: Push to registry (configure secrets)
+        run: |
+          echo "Configure DOCKER_USERNAME/DOCKER_PASSWORD secrets to push."
+          # docker login -u ${{ secrets.DOCKER_USERNAME }} -p ${{ secrets.DOCKER_PASSWORD }}
+          # docker tag stroke-risk-mlops:latest ${{ secrets.DOCKER_USERNAME }}/stroke-risk-mlops:latest
+          # docker push ${{ secrets.DOCKER_USERNAME }}/stroke-risk-mlops:latest
